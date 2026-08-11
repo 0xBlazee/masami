@@ -1,0 +1,25 @@
+# Compiled Binary Execution Targets
+wired_sniffer_pro
+wired_processor
+*.exe
+*.out
+*.app
+
+# Intermediate Silicon Object Files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+
+# Go Module Core Dependencies
+go.sum
+vendor/
+
+# Local Environment and System Cache Metadata
+.DS_Store
+.directory
+.vscode/
+.idea/
+*.log
+*.tmp
