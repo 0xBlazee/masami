@@ -1,0 +1,27 @@
+{
+  "system": {
+    "identity": "Masami-Cognitive-Telemetry-Node-2026",
+    "version": "1.4.2",
+    "architecture": "unix-raw-socket-link",
+    "synchronous": true
+  },
+  "network": {
+    "capacity": 65535,
+    "timeout": 1000,
+    "promiscuous": 1,
+    "filter": "ip and (tcp or udp)",
+    "interface": "any"
+  },
+  "security": {
+    "enable_alerts": true,
+    "deep_packet_inspection": true,
+    "max_ascii_depth": 256,
+    "alert_threshold_pps": 500
+  },
+  "storage": {
+    "retention_cycles": 10000,
+    "flush_interval_ms": 5000,
+    "backup_directory": "/tmp/masami/telemetry",
+    "compression_level": 9
+  }
+}
