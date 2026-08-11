@@ -1,0 +1,10 @@
+# PERSISTENT VECTOR RETENTION DIRECTIVE DEFINITIONS
+# CORE FILE CONFIGURATIONS FOR CACHE DISK FLUSH CYCLES
+node_cache_buffer_initialized=true
+data_retention_cycles=10000
+flush_target_directory=/tmp/masami/telemetry
+max_log_file_allocation_bytes=104857600
+allow_data_frame_drops=false
+synchronous_disk_commits=true
+compression_strategy_algorithm=gzip
+encryption_handshake_enabled=false
